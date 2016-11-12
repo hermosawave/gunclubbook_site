@@ -1,3 +1,6 @@
+/* @override 
+	http://thegunclubbook.com/css/main.css */
+
 /**
  * Reset some basic elements
  */
@@ -148,8 +151,8 @@ pre {
  * Site header
  */
 .site-header {
-  border-top: 5px solid #424242;
-  border-bottom: 1px solid #e8e8e8;
+  border-top: none;
+  border-bottom: none;
   min-height: 56px;
   position: relative; }
 
@@ -212,8 +215,10 @@ pre {
  * Site footer
  */
 .site-footer {
-  border-top: 1px solid #e8e8e8;
-  padding: 30px 0; }
+  border-top: none;
+  background-color: #222;
+  padding: 30px 0; 
+  }
 
 .footer-heading {
   font-size: 18px;

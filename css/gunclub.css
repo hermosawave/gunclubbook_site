@@ -5,6 +5,11 @@ body {
     color: white;
 }
 
+.site-header {
+  border-top: none;
+  border-bottom: none;
+  min-height: 56px;
+  position: relative; }
 
 .bookcover {
     text-align: center;
