@@ -1,8 +1,11 @@
 /* GunClub CSS */
 
 body {
-	background: url(/images/Duncan_bg.jpg) black;
-	
+	background: url(/images/Duncan_bg.jpg) no-repeat center center fixed; 
+	  -webkit-background-size: cover;
+	  -moz-background-size: cover;
+	  -o-background-size: cover;
+	  background-size: cover;
 	color: white;
 }
 
