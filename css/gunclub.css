@@ -1,3 +1,6 @@
+/* @override 
+	http://thegunclubbook.com/css/gunclub.css */
+
 /* GunClub CSS */
 
 body {
@@ -8,6 +11,20 @@ body {
 	  background-size: cover;
 	color: white;
 }
+
+ /**
+ * Headings
+ */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600; }
+
+h1.page-heading {
+	text-transform: uppercase;
+	font-weight: 900;
+	font-size: 50pt;
+	line-height: 50pt;
+}
+
 
 .site-header {
   border-top: none;
@@ -23,6 +40,7 @@ body {
     height: auto;
     max-width: 800px;
 }
+
 
 .red {
 	color:  red;
