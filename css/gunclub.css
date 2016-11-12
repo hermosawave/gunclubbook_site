@@ -1,0 +1,16 @@
+/* GunClub CSS */
+
+body {
+    background-color: black;
+    color: white;
+}
+
+
+.bookcover {
+    text-align: center;
+}
+.bookcover img {
+    width: 50%;
+    height: auto;
+    max-width: 800px;
+}
