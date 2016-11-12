@@ -1,8 +1,9 @@
 /* GunClub CSS */
 
 body {
-    background-color: black;
-    color: white;
+	background: url(/images/Duncan_bg.jpg) black;
+	
+	color: white;
 }
 
 .site-header {
