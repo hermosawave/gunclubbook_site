@@ -29,6 +29,14 @@ h1.page-heading {
 
 }
 
+a {
+    color: inherit;
+}
+
+a:hover {
+    color: #DB263A;
+}
+
 p {
     font-size: 14pt;
     line-height: 16pt;
@@ -37,8 +45,9 @@ p {
 .intro {
     font-size: 16pt;
     line-height: 22pt;
-
 }
+
+
 
 .site-header {
   border-top: none;
