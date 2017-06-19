@@ -13,6 +13,23 @@ body {
      font-family: "sutro",sans-serif;
 }
 
+.wrapper {
+  max-width: -webkit-calc(1200px - (30px * 2));
+  max-width: calc(1200px - (30px * 2));
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 30px;
+  padding-left: 30px; 
+}
+@media screen and (max-width: 800px) {
+    .wrapper {
+      max-width: -webkit-calc(800px - (30px));
+      max-width: calc(800px - (30px));
+      padding-right: 15px;
+      padding-left: 15px; 
+    } 
+}
+
  /**
  * Headings
  */
@@ -44,32 +61,67 @@ p {
 }
 
 .intro {
-    font-size: 16pt;
-    line-height: 22pt;
+  /*   flex: 1 2 auto; */
+ float: right;
+    width: 45%;
 }
 
+.intro p {
+       font-size: 16pt;
+    line-height: 22pt;
 
+}
 
 .site-header {
   border-top: none;
   border-bottom: none;
   min-height: 56px;
-  position: relative; }
+  position: relative; 
+}
+
+.flexbox {
+   /* display: flex; */
+    clear:both;
+    margin: 30px 0;
+    display: block;
+}
 
 .bookcover {
     text-align: left;
-    margin: 20px;
+    margin: 0 50px 20px 0;
+   /* flex: 2 1 auto; */
+    width: 45%;
+    float: left;    
+}
+
+@media screen and (max-width: 800px) {
+    .bookcover, .intro {
+        float: none;
+        width: 100%;
+        margin-right: 20px;
+    }
+  
 }
 .bookcover img {
-    width:35%;
+    width:100%;
     height: auto;
-    max-width: 600px;
+    max-width: 500px;
     background-color: #ccc;
     padding: 10px;
     box-shadow: 10px 10px 20px black;
 }
 
+.headshot img {
+    width:100%;
+    height: auto;
+    max-width: 240px;
+    padding: 50px 0 10px 0;
+ }
 
+hr {
+    color: black;
+    margin: 20px 0;
+}
 .red {
 	color:  #DB263A;
 }
