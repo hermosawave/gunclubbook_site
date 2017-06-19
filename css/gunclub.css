@@ -97,8 +97,8 @@ p {
 @media screen and (max-width: 800px) {
     .bookcover, .intro {
         float: none;
-        width: 100%;
-        margin-right: 20px;
+        width: 95%;
+        margin-right: 5%;
     }
   
 }
