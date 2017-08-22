@@ -1,16 +1,20 @@
 /* @override 
-	http://thegunclubbook.com/css/gunclub.css */
+	http://thegunclubbook.com/css/gunclub.css
+	http://127.0.0.1:4000/css/main.css
+	http://127.0.0.1:4000/css/gunclub.css */
 
 /* GunClub CSS */
 
 body {
-	background: url(/images/Duncan_bg.jpg) no-repeat center center fixed; 
-	  -webkit-background-size: cover;
+	background: url(/images/Duncan_bg.jpg) center center no-repeat fixed #000000;
+	background-size: cover;
+	-webkit-background-size: cover;
 	  -moz-background-size: cover;
 	  -o-background-size: cover;
-	  background-size: cover;
 	color: white;
      font-family: "sutro",sans-serif;
+     margin:  0;
+     padding: 0 0 20px 0;
 }
 
 .site-header {
@@ -20,54 +24,91 @@ body {
 .wrapper {
   max-width: -webkit-calc(1200px - (30px * 2));
   max-width: calc(1200px - (30px * 2));
-  margin-right: auto;
   margin-left: auto;
-  padding-right: 30px;
-  padding-left: 30px; 
+  margin-right: auto;
+  padding: 0;
+  background-color: rgba(0,0,0,.5);
 }
+
+.home {
+	padding-right: 30px;
+	padding-left: 30px; 	
+}
+
 @media screen and (max-width: 800px) {
     .wrapper {
       max-width: -webkit-calc(800px - (30px));
       max-width: calc(800px - (30px));
-      padding-right: 15px;
-      padding-left: 15px; 
-    } 
+     } 
+     .home {
+		padding-right: 15px;
+		padding-left: 15px; 
+	}
 }
+
 
  /**
  * Headings
  */
 h1, h2, h3, h4, h5, h6 {
-  font-weight: 600; }
-
-h1.page-heading {
-	text-transform: uppercase;
-	font-weight: 900;
-	font-size: 36pt;
-	line-height: 46pt;
-    font-family: "bourbon",sans-serif;
-    margin-bottom: 30px;
-
-}
-
-a {
-    color: #DB263A;
-}
-
-a:hover {
-    color: #E96D8A;
-    text-decoration: none;
-}
-
-.contact {
+  font-weight: 600; 
+  }
+  
+  h2 {
+  	font-size: 24pt;
+  	line-height: 26pt;
+  	margin: 0;
+  }
+  
+  p {
+      font-size: 14pt;
+      line-height: 19pt;
+  }
+  
+   a {
+      color: #DB263A;
+  }
+  
+  a:hover {
+      color: #E96D8A;
+      text-decoration: none;
+  }
+  
+  /* menu */
+  
+ul.topmenu {
+	background-color: rgba(0,0,0,.5);
+	margin:  0 0 20px 0;
+	padding: 5px 30px;
+	display: block;
+	 }
+	 
+	.topmenu li {
+		list-style: none;
+		display: inline;
+		padding-right:  10px;
+		margin-right: 10px;
+	}
+	
+	li.page-heading {
+ 	text-transform: uppercase;
+ 	font-weight: 900;
+ 	font-size: 36pt;
+ 	line-height: 46pt;
+     font-family: "bourbon",sans-serif;
+     margin-bottom: 30px;
+ }
+ 
+ li a {
+ 	text-decoration: none;
+ 	
+ }
+ 
+ .contact {
     background: rgba(0, 0, 0, .5);
     padding: 1px;
 }
 
-p {
-    font-size: 14pt;
-    line-height: 16pt;
-}
 
 .intro {
   /*   flex: 1 2 auto; */
@@ -75,11 +116,6 @@ p {
     width: 45%;
 }
 
-.intro p {
-       font-size: 16pt;
-    line-height: 22pt;
-
-}
 
 .site-header {
   border-top: none;
@@ -101,6 +137,17 @@ p {
    /* flex: 2 1 auto; */
     width: 45%;
     float: left;    
+}
+
+#reviews .review {
+/*	-webkit-column-width: 400px;
+	-moz-column-width: 400px;
+	column-width: 400px;
+	-webkit-column-gap: 4em;
+	-moz-column-gap: 4em;
+	column-gap: 6em;	    
+	*/
+	padding-bottom: 20px;    
 }
 
 @media screen and (max-width: 800px) {
@@ -128,9 +175,33 @@ p {
  }
 
 hr {
-    color: black;
-    margin: 20px 0;
+background-color:red;
+border-width:0;
+color:#444;
+height:1px;
+line-height:0;
+margin:20px 0;
+page-break-after:always;
+text-align:center;
+width:100%;
 }
+
+
+
 .red {
 	color:  #DB263A;
+}
+
+.attribution {
+	text-align: right;
+	font-style: italic;
+}
+.attribution:before {
+	content:  "— ";
+}
+
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
 }
